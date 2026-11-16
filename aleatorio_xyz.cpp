@@ -20,10 +20,10 @@ int main(int argc, char* argv[]) {
     int aleatorio;
 
     //NUMERO DE CADENAS
-    for(int j=0; j<atoi(argv[2]);j++){
+    for(int j=0; j<atoi(argv[1]);j++){
 
-        //LONGITUD DE CADENA
-        for(int i=0; i<atoi(argv[1]);i++){
+        //LONGITUD DE CADENA: ALEATORIA
+        for(int i=0; i<(rand()%(15-0)+0);i++){
             aleatorio = rand()%(max-min)+min;
             if(aleatorio == 0){
                 //Escribe x
